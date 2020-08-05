@@ -8,6 +8,9 @@
  */
 heap_t *sort_heap(heap_t *node, int value)
 {
+	(void)node;
+	(void)value;
+	return (NULL);
 }
 
 /**
