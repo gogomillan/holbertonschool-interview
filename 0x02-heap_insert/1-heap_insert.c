@@ -1,5 +1,23 @@
 #include "binary_trees.h"
 
+
+/**
+ * height_ - Measures the height of a binary tree
+ *
+ * @tree: Pointer to the node to measures the height
+ *
+ * Return: The height of the tree starting at @node
+ */
+size_t height_(const binary_tree_t *tree)
+{
+	size_t height_l;
+	size_t height_r;
+
+	height_l = tree->left ? 1 + height_(tree->left) : 0;
+	height_r = tree->right ? 1 + height_(tree->right) : 0;
+	return (height_l > height_r ? height_l : height_r);
+}
+
 /**
  * sort_heap - Sorting the heap
  * @node: The new node
@@ -86,7 +104,7 @@ heap_t *heap_insert(heap_t **root, int value)
 		return ((*root)->right);
 	}
 	else
-		h = _height(*root);
+		h = height_(*root);
 	/* Go for the next available position in the height */
 	l_node = find_next((*root)->left, (h - 1), value);
 	if (l_node == NULL)
