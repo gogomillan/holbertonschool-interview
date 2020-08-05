@@ -42,7 +42,7 @@ heap_t *find_next(heap_t *root, size_t height, int value)
 		else
 			return (NULL);
 	}
-	
+
 	l_node = find_next(root->left, (height - 1), value);
 	if (l_node == NULL)
 		r_node = find_next(root->right, (height - 1), value);
@@ -50,7 +50,7 @@ heap_t *find_next(heap_t *root, size_t height, int value)
 }
 
 /**
- * heap_insert - Inserts a value into a Max Binary Heap 
+ * heap_insert - Inserts a value into a Max Binary Heap
  * @root: The main node of the tree at this point
  * @value: The payload
  * Return: The pointer to the node or NULL if failure
@@ -85,10 +85,10 @@ heap_t *heap_insert(heap_t **root, int value)
 	else
 		h = _height(*root);
 	/* Go for the next available position in the height */
-	l_node = find_next((*root)->left, (h - 1), value);		/* Left */
+	l_node = find_next((*root)->left, (h - 1), value);
 	if (l_node == NULL)
-		r_node = find_next((*root)->right, (h - 1), value);	/* Right */
+		r_node = find_next((*root)->right, (h - 1), value);
 	if (l_node == NULL && r_node == NULL)
-		l_node = find_next((*root)->left, h, value);		/* Next level in depth */
+		l_node = find_next((*root)->left, h, value);
 	return (l_node != NULL ? l_node : r_node);
 }
