@@ -26,9 +26,13 @@ size_t height_(const binary_tree_t *tree)
  */
 heap_t *sort_heap(heap_t *node, int value)
 {
-	(void)node;
-	(void)value;
-	return (NULL);
+	while (node->parent != NULL && node->parent->n < value)
+	{
+		node->n = node->parent->n;
+		node->parent->n = value;
+		node = node->parent;
+	}
+	return (node);
 }
 
 /**
@@ -46,19 +50,11 @@ heap_t *find_next(heap_t *root, size_t height, int value)
 	{
 		if (root->left == NULL)
 		{	root->left = binary_tree_node(root, value);
-			if (value > root->n)
-			{	root->left->n = root->n, root->n = value;
-				return (root);
-			}
-			return (root->left);
+			return (sort_heap(root->left, value));
 		}
 		else if (root->right == NULL)
 		{	root->right = binary_tree_node(root, value);
-			if (value > root->n)
-			{	root->right->n = root->n, root->n = value;
-				return (root);
-			}
-			return (root->right);
+			return (sort_heap(root->right, value));
 		}
 		else
 			return (NULL);
