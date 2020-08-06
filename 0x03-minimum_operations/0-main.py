@@ -1,0 +1,18 @@
+#!/usr/bin/python3
+"""
+Main file for testing
+"""
+
+minOperations = __import__('0-minoperations').minOperations
+
+n = 4
+print("Min number of operations to reach {} characters: {}".format(n, minOperations(n)))
+n = 12
+print("Min number of operations to reach {} characters: {}".format(n, minOperations(n)))
+
+print ("===")
+n = 7
+print("Min number of operations to reach {} characters: {}".format(n, minOperations(n)))
+n = 20
+print("Min number of operations to reach {} characters: {}".format(n, minOperations(n)))
+
