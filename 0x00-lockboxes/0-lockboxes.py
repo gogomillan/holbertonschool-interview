@@ -21,7 +21,7 @@ def findKeys(boxes, each, rank):
         if rank.get(key) != key and key < len(boxes):
             rank[key] = key
             findKeys(boxes, key, rank)
-    
+
 
 def canUnlockAll(boxes):
     """
