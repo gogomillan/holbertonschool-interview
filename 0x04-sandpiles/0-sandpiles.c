@@ -1,7 +1,7 @@
 #include "sandpiles.h"
 
 /**
- * sandpiles_sum - Make sure grid1 is a stable sandpile
+ * sandpiles_sum - Add grid2 to grid1 and make sure is a stable sandpile
  * @grid1: First sandpile
  * @grid2: Second sandpile
  * Return: Nothing
@@ -10,16 +10,16 @@ void sandpiles_sum(int grid1[3][3], int grid2[3][3])
 {
 	int i, j;
 
-	for (i = 0; i < 3; i++)
+	for (i = 0; i < 3; i++)	/* Add each element from grid2 to grid1 */
 		for (j = 0; j < 3; j++)
 			grid1[i][j] += grid2[i][j];
 
-	while (eval_is_stable(grid1) != TRUE)
+	while (eval_is_stable(grid1) != TRUE)	/* While grid1 not stable */
 	{
 		printf("=\n");
-		prn_grid(grid1);
+		prn_grid(grid1);			/* Print the sandpile */
 
-		do_toppling_round(grid1);
+		do_toppling_round(grid1);	/* Do the toppling round on the sandpile */
 	}
 }
 
@@ -34,7 +34,7 @@ int eval_is_stable(int grid1[3][3])
 
 	for (i = 0; i < 3; i++)
 		for (j = 0; j < 3; j++)
-			if (grid1[i][j] > 3)
+			if (grid1[i][j] > 3)	/* If cell has more then 3 grains */
 				return (FALSE);
 
 	return (TRUE);
@@ -49,10 +49,10 @@ void do_toppling_round(int grid1[3][3])
 {
 	int i = 0, j = 0;
 
-	oper_celd(grid1, i, j, INIT);
+	oper_celd(grid1, i, j, INIT);	/* Initialize the grid to analize */
 	for (i = 0; i < 3; i++)
 		for (j = 0; j < 3; j++)
-			oper_celd(grid1, i, j, CALC);
+			oper_celd(grid1, i, j, CALC);	/* Calculate the cell i,j */
 }
 
 
@@ -68,7 +68,7 @@ void oper_celd(int grid1[3][3], int i, int j, char cmd)
 	static int grid[3][3] = {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}};
 	int r, c;
 
-	if (cmd == INIT)
+	if (cmd == INIT)		/* When init */
 	{
 		for (r = 0; r < 3; r++)
 			for (c = 0; c < 3; c++)
@@ -77,22 +77,22 @@ void oper_celd(int grid1[3][3], int i, int j, char cmd)
 	}
 	if (grid[i][j] <= 3)	/* Eval stable cell */
 		return;
-	if (i == 0)				/* Eval UP side */
+	if (i == 0)				/* Eval UP side of cell */
 		grid1[i][j]--;
 	else
 		if (grid[i - 1][j] <= 3)
 			grid1[i][j]--, grid1[i - 1][j]++;
-	if (j == 2)				/* Eval RIGHT side */
+	if (j == 2)				/* Eval RIGHT side of cell */
 		grid1[i][j]--;
 	else
 		if (grid[i][j + 1] <= 3)
 			grid1[i][j]--, grid1[i][j + 1]++;
-	if (i == 2)				/* Eval BOTTOM side */
+	if (i == 2)				/* Eval BOTTOM side of cell */
 		grid1[i][j]--;
 	else
 		if (grid[i + 1][j] <= 3)
 			grid1[i][j]--, grid1[i + 1][j]++;
-	if (j == 0)				/* Eval LEFT side */
+	if (j == 0)				/* Eval LEFT side of cell */
 		grid1[i][j]--;
 	else
 		if (grid[i][j - 1] <= 3)
