@@ -11,9 +11,7 @@ int list[1000000];
 long n = 1, i;
 listint_t *forw;
 
-	if (head == NULL)
-		return (1);
-	if (*head == NULL)
+	if (head == NULL || *head == NULL)
 		return (1);
 	if ((*head)->next == NULL)
 		return (1);
