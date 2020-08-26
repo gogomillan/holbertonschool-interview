@@ -1,50 +1,32 @@
 #include "lists.h"
 
 /**
- * is_palindrome - checks if a singly linked list is a palindrome.
- * @head: listint_t pointer to the list's head
- * Return: 1 if is a palindrom, 0 if not
+ * is_palindrome - Checks if a singly linked list is a palindrome.
+ * @head: Head of the list
+ * Return: 0 if it is not a palindrome, 1 if it is a palindrome
  */
 int is_palindrome(listint_t **head)
 {
-	size_t n = 1;	/* Number of nodes */
-	listint_t *tmp = NULL, *new = NULL, *rev = NULL;
+int list[1000000];
+long n = 1, i;
+listint_t *forw;
 
-	if (head == NULL || *head == NULL)
+	if (head == NULL)
+		return (1);
+	if (*head == NULL)
+		return (1);
+	if ((*head)->next == NULL)
 		return (1);
 
-	tmp = *head;
-	new = malloc(sizeof(listint_t));
-	new->n = tmp->n;
-	new->next = NULL;
-	rev = new;
+	forw = *head, n = 0;
+	while (forw != NULL)
+		list[n] = forw->n, forw = forw->next, n++;
 
-	/* Get the lenght and reversed list */
-	while (tmp->next != NULL)
+	for (i = 0; i < (n / 2); i++)
 	{
-		n++;
-		tmp = tmp->next;
-		new = malloc(sizeof(listint_t));
-		new->n = tmp->n;
-		new->next = rev;
-		rev = new;
-	}
-
-	/* Iterate both lists looking for a difference */
-	n = n / 2;
-	tmp = *head;
-	new = rev;
-	while (n)
-	{
-		if (tmp->n != new->n)
-		{
-			free_listint(rev);
+		if (list[i] != list[n - i - 1])
 			return (0);
-		}
-		tmp = tmp->next;
-		new = new->next;
-		n--;
 	}
-	free_listint(rev);
+
 	return (1);
 }
