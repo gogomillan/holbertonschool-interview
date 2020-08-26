@@ -12,7 +12,7 @@ long n = 0, /* Number of elements */ i; /* Iterator of elements */
 listint_t *node;
 
 	if (head == NULL || *head == NULL)
-		return (1);
+		return (0);
 	if ((*head)->next == NULL)
 		return (1);
 
