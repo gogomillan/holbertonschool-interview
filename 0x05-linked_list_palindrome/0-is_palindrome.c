@@ -7,18 +7,22 @@
  */
 int is_palindrome(listint_t **head)
 {
-int list[1000000];
-long n = 1, i;
-listint_t *forw;
+int list[1000000]; /* Buffer for the list */
+long n = 0, /* Number of elements */ i; /* Iterator of elements */
+listint_t *node;
 
 	if (head == NULL || *head == NULL)
 		return (1);
 	if ((*head)->next == NULL)
 		return (1);
 
-	forw = *head, n = 0;
-	while (forw != NULL)
-		list[n] = forw->n, forw = forw->next, n++;
+	node = *head;
+	while (node != NULL)
+	{
+		list[n] = node->n;
+		node = node->next;
+		n++;
+	}
 
 	for (i = 0; i < (n / 2); i++)
 	{
