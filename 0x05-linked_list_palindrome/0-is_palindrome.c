@@ -11,7 +11,7 @@ int is_palindrome(listint_t **head)
 	listint_t *tmp = NULL, *new = NULL, *rev = NULL;
 
 	if (head == NULL || *head == NULL)
-		return (0);
+		return (1);
 
 	tmp = *head;
 	new = malloc(sizeof(listint_t));
