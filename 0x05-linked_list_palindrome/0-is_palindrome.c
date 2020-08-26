@@ -8,11 +8,12 @@
 int is_palindrome(listint_t **head)
 {
 	size_t n = 1;	/* Number of nodes */
-	listint_t *tmp = *head, *new = NULL, *rev = NULL;
+	listint_t *tmp = NULL, *new = NULL, *rev = NULL;
 
-	if (head == NULL && *head == NULL)
+	if (head == NULL || *head == NULL)
 		return (0);
 
+	tmp = *head;
 	new = malloc(sizeof(listint_t));
 	new->n = tmp->n;
 	new->next = NULL;
