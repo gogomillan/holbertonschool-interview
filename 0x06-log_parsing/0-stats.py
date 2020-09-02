@@ -44,7 +44,6 @@ if __name__ == "__main__":
         print('File size: {}'.format(summ))
         for each in stcdor:
             print('{}: {}'.format(each[0], each[1]))
-        #traceback.print_exc()
         raise
     else:
         stcdor = sorted(stcd.items())
