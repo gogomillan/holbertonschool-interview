@@ -4,7 +4,7 @@ Script that reads stdin line by line and computes metrics:
 - Input format: <IP Address> - [<date>] "GET /projects/260 HTTP/1.1" <status
                 code> <file size>
 - After every 10 lines and/or a keyboard interruption (CTRL + C), print these
-    statistics from the beginning: 
+    statistics from the beginning:
 Example:
     File size: 5213
     200: 2
@@ -21,6 +21,7 @@ import traceback
 stcd = {}
 summ = [0]
 
+
 def prn_stats():
     """
     Print the statistics
@@ -29,6 +30,7 @@ def prn_stats():
     print('File size: {}'.format(summ[0]))
     for each in stcdor:
         print('{}: {}'.format(each[0], each[1]))
+
 
 def main():
     """
@@ -40,7 +42,7 @@ def main():
             fact = data.split(' ')
             if len(fact) > 7:
                 if stcd.get(fact[7]):
-                    stcd[fact[7]] =  stcd.get(fact[7]) + 1
+                    stcd[fact[7]] = stcd.get(fact[7]) + 1
                 else:
                     stcd[fact[7]] = 1
             if len(fact) > 8:
