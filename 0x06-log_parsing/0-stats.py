@@ -16,26 +16,11 @@ Example:
 """
 import sys
 import traceback
-
-
 stcd = {}
-summ = [0]
+summ = 0
 
 
-def prn_stats():
-    """
-    Print the statistics
-    """
-    stcdor = sorted(stcd.items())
-    print('File size: {}'.format(summ[0]))
-    for each in stcdor:
-        print('{}: {}'.format(each[0], each[1]))
-
-
-def main():
-    """
-    The main function
-    """
+if __name__ == "__main__":
     cnt = 0
     try:
         for data in sys.stdin:
@@ -46,16 +31,23 @@ def main():
                 else:
                     stcd[fact[7]] = 1
             if len(fact) > 8:
-                summ[0] += int(fact[8])
+                summ += int(fact[8])
             cnt += 1
             if cnt == 10:
-                prn_stats()
+                stcdor = sorted(stcd.items())
+                print('File size: {}'.format(summ))
+                for each in stcdor:
+                    print('{}: {}'.format(each[0], each[1]))
                 cnt = 0
     except KeyboardInterrupt:
-        prn_stats()
-        traceback.print_exc()
+        stcdor = sorted(stcd.items())
+        print('File size: {}'.format(summ))
+        for each in stcdor:
+            print('{}: {}'.format(each[0], each[1]))
+        #traceback.print_exc()
+        raise
     else:
-        prn_stats()
-
-if __name__ == "__main__":
-    main()
+        stcdor = sorted(stcd.items())
+        print('File size: {}'.format(summ))
+        for each in stcdor:
+            print('{}: {}'.format(each[0], each[1]))
