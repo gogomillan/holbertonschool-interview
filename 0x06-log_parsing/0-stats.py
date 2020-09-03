@@ -27,12 +27,10 @@ if __name__ == "__main__":
             try:
                 fact = data.split(' ')
                 """ If there is a status code """
-                if len(fact) > 7:
-                    if fact[7] in stcd:
-                        stcd[fact[7]] += 1
+                if fact[-2] in stcd:
+                    stcd[fact[-2]] += 1
                 """ If there is a lenght """
-                if len(fact) > 8:
-                    summ += int(fact[8])
+                summ += int(fact[-1])
             except:
                 pass
             cnt += 1
