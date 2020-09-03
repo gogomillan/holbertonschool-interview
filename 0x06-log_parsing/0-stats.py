@@ -15,7 +15,6 @@ Example:
     500: 3
 """
 import sys
-import traceback
 stcd = {"200": 0, "301": 0, "400": 0, "401": 0, "403": 0,
         "404": 0, "405": 0, "500": 0}
 summ = 0
@@ -25,14 +24,17 @@ if __name__ == "__main__":
     cnt = 0
     try:
         for data in sys.stdin:
-            fact = data.split(' ')
-            """ If there is a status code """
-            if len(fact) > 7:
-                if fact[7] in stcd:
-                    stcd[fact[7]] += 1
-            """ If there is a lenght """
-            if len(fact) > 8:
-                summ += int(fact[8])
+            try:
+                fact = data.split(' ')
+                """ If there is a status code """
+                if len(fact) > 7:
+                    if fact[7] in stcd:
+                        stcd[fact[7]] += 1
+                """ If there is a lenght """
+                if len(fact) > 8:
+                    summ += int(fact[8])
+            except:
+                pass
             cnt += 1
             if cnt == 10:
                 stcdor = sorted(stcd.keys())
