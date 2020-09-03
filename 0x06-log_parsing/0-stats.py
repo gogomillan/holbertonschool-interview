@@ -15,14 +15,28 @@ Example:
     500: 3
 """
 import sys
-stcd = {"200": 0, "301": 0, "400": 0, "401": 0, "403": 0,
-        "404": 0, "405": 0, "500": 0}
+stcd = {"200": 0, "301": 0, "400": 0, "401": 0,
+        "403": 0, "404": 0, "405": 0, "500": 0}
 summ = 0
+
+
+def prn_stats():
+    """
+    Function that print stats about log
+    """
+    global summ
+
+    print('File size: {}'.format(summ))
+    stcdor = sorted(stcd.keys())
+    for each in stcdor:
+        if stcd[each] > 0:
+            print('{}: {}'.format(each, stcd[each]))
 
 
 if __name__ == "__main__":
     cnt = 0
     try:
+        """ Iter the standar input """
         for data in sys.stdin:
             try:
                 fact = data.split(' ')
@@ -33,24 +47,13 @@ if __name__ == "__main__":
                 summ += int(fact[-1])
             except:
                 pass
+            """ Printing control """
             cnt += 1
             if cnt == 10:
-                stcdor = sorted(stcd.keys())
-                print('File size: {}'.format(summ))
-                for each in stcdor:
-                    if stcd[each] > 0:
-                        print('{}: {}'.format(each, stcd[each]))
+                prn_stats()
                 cnt = 0
     except KeyboardInterrupt:
-        stcdor = sorted(stcd.keys())
-        print('File size: {}'.format(summ))
-        for each in stcdor:
-            if stcd[each] > 0:
-                print('{}: {}'.format(each, stcd[each]))
+        prn_stats()
         raise
     else:
-        stcdor = sorted(stcd.keys())
-        print('File size: {}'.format(summ))
-        for each in stcdor:
-            if stcd[each] > 0:
-                print('{}: {}'.format(each, stcd[each]))
+        prn_stats()
