@@ -1,4 +1,4 @@
-# :memo: Palindrome integer
+## :memo: Palindrome integer
 
 Write a function that checks whether or not a given unsigned integer is a palindrome.
 
@@ -66,3 +66,5 @@ alex@~/0x08-palindrome_integer$
 \[ [0-is_palindrome.c](0-is_palindrome.c) \]  
 **Files:**
 \[ [palindrome.h](palindrome.h) \]  
+
+\[ [Back](../../..#readme) \]
