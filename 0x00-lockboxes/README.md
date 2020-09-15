@@ -1,4 +1,4 @@
-| :memo: Lockboxes
+## :memo: Lockboxes
 
 You have n number of locked boxes in front of you. Each box is numbered
 sequentially from 0 to n - 1 and each box may contain keys to the other boxes.
@@ -38,4 +38,4 @@ carrie@ubuntu:~/0x00-lockboxes$
 **File:** 
 \[ [0-lockboxes.py](0-lockboxes.py) \]
 
-\[ [Back](../..) \]
+\[ [Back](../../..) \]
