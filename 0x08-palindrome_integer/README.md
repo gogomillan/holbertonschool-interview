@@ -65,4 +65,4 @@ alex@~/0x08-palindrome_integer$
 **Files:**
 \[ [0-is_palindrome.c](0-is_palindrome.c) \]  
 **Files:**
-\[[palindrome.h](palindrome.h)\]  
+\[ [palindrome.h](palindrome.h) \]  
