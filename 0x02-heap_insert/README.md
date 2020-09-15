@@ -316,7 +316,7 @@ Inserted: 50
 alex@/tmp/binary_trees$
 ```
 
-**File:** 
+**Files:** 
 \[ [1-heap_insert.c](1-heap_insert.c) ,
 [0-binary_tree_node.c](0-binary_tree_node.c) \]
 
