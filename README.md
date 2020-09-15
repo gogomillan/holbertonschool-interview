@@ -88,3 +88,14 @@ Challenges such as an Interview
 :bookmark_tabs: :arrow_upper_right: [0x06-log_parsing](0x06-log_parsing)  
 :bookmark_tabs: :arrow_upper_right: [0x07-linked_list_cycle](0x07-linked_list_cycle)  
 :bookmark_tabs: :arrow_upper_right: [0x08-palindrome_integer](0x08-palindrome_integer)  
+
+## :books: Content
+:arrow_upper_right: :bookmark_tabs: [0x00-lockboxes](0x00-lockboxes)  
+:arrow_upper_right: :bookmark_tabs: [0x01-insert_in_sorted_linked_list](0x01-insert_in_sorted_linked_list)  
+:arrow_upper_right: :bookmark_tabs: [0x02-heap_insert](0x02-heap_insert)  
+:arrow_upper_right: :bookmark_tabs: [0x03-minimum_operations](0x03-minimum_operations)  
+:arrow_upper_right: :bookmark_tabs: [0x04-sandpiles](0x04-sandpiles)  
+:arrow_upper_right: :bookmark_tabs: [0x05-linked_list_palindrome](0x05-linked_list_palindrome)  
+:arrow_upper_right: :bookmark_tabs: [0x06-log_parsing](0x06-log_parsing)  
+:arrow_upper_right: :bookmark_tabs: [0x07-linked_list_cycle](0x07-linked_list_cycle)  
+:arrow_upper_right: :bookmark_tabs: [0x08-palindrome_integer](0x08-palindrome_integer)  
