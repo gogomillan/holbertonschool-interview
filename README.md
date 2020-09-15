@@ -12,7 +12,6 @@ Challenges such as an Interview
 - :bookmark_tabs: [0x06-log_parsing](0x06-log_parsing)
 - :bookmark_tabs: [0x07-linked_list_cycle](0x07-linked_list_cycle)
 - :bookmark_tabs: [0x08-palindrome_integer](0x08-palindrome_integer)
-
 - :bookmark_tabs: :point_right: [0x00-lockboxes](0x00-lockboxes)
 - :bookmark_tabs: :point_right: [0x01-insert_in_sorted_linked_list](0x01-insert_in_sorted_linked_list)
 - :bookmark_tabs: :point_right: [0x02-heap_insert](0x02-heap_insert)
