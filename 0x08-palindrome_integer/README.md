@@ -62,7 +62,7 @@ alex@~/0x08-palindrome_integer$ ./palindrome 1234567898654321
 alex@~/0x08-palindrome_integer$
 ```
 
-**Files: **
+**Files:**
 [0-is_palindrome.c](0-is_palindrome.c)  
-**Files: **
+**Files:**
 [palindrome.h](palindrome.h)  
