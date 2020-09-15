@@ -172,7 +172,6 @@ carrie@ubuntu:0x01$
 
 **Files:** 
 \[ [0-insert_number.c](0-insert_number.c) \]
-**Files:** 
 \[ [lists.h](lists.h) \]
 
 \[ [Back](../../..#readme) \]
