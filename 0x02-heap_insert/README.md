@@ -321,4 +321,4 @@ alex@/tmp/binary_trees$
 [0-binary_tree_node.c](0-binary_tree_node.c) \]
 
 
-[Back](../../..#readme)
+\[ [Back](../../..#readme) \]
