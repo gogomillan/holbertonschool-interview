@@ -10,11 +10,11 @@ exactly n H characters in the file.
 
 **Concept:**
 
-n = 9  
+n = **9**  
 
-H => Copy All => Paste => HH => Paste =>HHH => Copy All => Paste => HHHHHH => Paste => HHHHHHHHH  
+H => Copy All => Paste => H`H` => Paste =>H`HH` => Copy All => Paste => HHH`HHH` => Paste => HHH`HHHHHH`  
 
-Number of operations: 6  
+Number of operations: **6**  
 
 **Concept:**
 ```
