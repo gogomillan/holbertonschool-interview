@@ -2,8 +2,8 @@
 \[ [Back](../../..#readme) \]
 \[ [Data_Structures](#Data_Structures) \]
 \[ [Print_Function](#Print_Function) \]
-\[ [Task_0](#Task_0) \]
-\[ [Task_1](#Task_1) \] 
+\[ [Files_0](#Files_0) \]
+\[ [Files_1](#Files_1) \] 
 
 ### Data_Structures
 
@@ -220,7 +220,7 @@ alex@/tmp/binary_trees$ ./0-node
 alex@/tmp/binary_trees$
 ```
 
-**File:** 
+#### Files_0:
 \[ [0-binary_tree_node.c](0-binary_tree_node.c)  \]
 
 
@@ -321,7 +321,8 @@ Inserted: 50
 alex@/tmp/binary_trees$
 ```
 
-#### Files:
+#### Files:w
+_1:
 \[ [1-heap_insert.c](1-heap_insert.c) ,
 [0-binary_tree_node.c](0-binary_tree_node.c) \]
 
