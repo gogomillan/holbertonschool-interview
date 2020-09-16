@@ -3,7 +3,7 @@ Challenges such as an Interview
 
 ## :books: Content
 - :bookmark_tabs: [0x00-lockboxes](0x00-lockboxes/.#readme)
-- :bookmark_tabs: [0x01-insert_in_sorted_linked_list](0x01-insert_in_sorted_linked_list/.#readme)
+- :bookmark_tabs: [0x01-insert_in_sorted_linked_list](0x01-insert_in_sorted_linked_list/.#readme) ![C](https://img.shields.io/badge/c%20-%2300599C.svg?&style=for-the-badge&logo=c&logoColor=white)
 - :bookmark_tabs: [0x02-heap_insert](0x02-heap_insert/.#readme)
 - :bookmark_tabs: [0x03-minimum_operations](0x03-minimum_operations/.#readme)
 - :bookmark_tabs: [0x04-sandpiles](0x04-sandpiles/.#readme)
