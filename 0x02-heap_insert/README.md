@@ -1,6 +1,11 @@
 ## :memo: Heap Insert
+\[ [Back](../../..#readme) \]
+\[ [Data_Structures](#Data_Structures) \]
+\[ [Print_Function](#Print_Function) \]
+\[ [Task_0](#Task_0) \]
+\[ [Task_1](#Task_1) \] 
 
-### Data structures
+### Data_Structures
 
 Please use the following data structures and types for binary trees. Dont
 forget to include them in your header file.
@@ -29,7 +34,7 @@ struct binary_tree_s
 typedef struct binary_tree_s heap_t;
 ```
 
-### Print function
+### Print_Function
 
 To match the examples in the tasks, you are given this function:
 ```
@@ -170,7 +175,7 @@ heap_t *heap_insert(heap_t **root, int value);
 vagrant@gogomillan~$
 ```
 
-### Task 0. New node mandatory
+### Task_0. New node mandatory
 
 Write a function that creates a binary tree node:
 - Prototype: binary_tree_t \*binary_tree_node(binary_tree_t \*parent, int value);
@@ -219,7 +224,7 @@ alex@/tmp/binary_trees$
 \[ [0-binary_tree_node.c](0-binary_tree_node.c)  \]
 
 
-### Task 1. Heap - Insert mandatory
+### Task_1. Heap - Insert mandatory
 
 Write a function that inserts a value into a Max Binary Heap:
 - Prototype: heap_t \*heap_insert(heap_t \*\*root, int value)
@@ -316,7 +321,7 @@ Inserted: 50
 alex@/tmp/binary_trees$
 ```
 
-**Files:** 
+#### Files:
 \[ [1-heap_insert.c](1-heap_insert.c) ,
 [0-binary_tree_node.c](0-binary_tree_node.c) \]
 
