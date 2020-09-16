@@ -1,4 +1,6 @@
 ## :memo: Palindrome integer
+\[ [Back](../../..#readme) \]
+\[ [Example](#Example) \]
 
 Write a function that checks whether or not a given unsigned integer is a palindrome.
 
