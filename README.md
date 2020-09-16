@@ -12,6 +12,8 @@ Challenges such as an Interview
 - :bookmark_tabs: [0x07-linked_list_cycle](0x07-linked_list_cycle/.#readme)
 - :bookmark_tabs: [0x08-palindrome_integer](0x08-palindrome_integer/.#readme)
 
+## :sunglasses: Author
+Gonzalo Gomez Millan
 [![GitHub](https://img.shields.io/badge/github-%23100000.svg?&style=for-the-badge&logo=github&logoColor=white)](https://github.com/gogomillan)
 [![Tweeting](https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/gogomillan)
 [![Linking](https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/gogomillan)
