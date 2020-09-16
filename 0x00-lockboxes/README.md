@@ -1,4 +1,7 @@
 ## :memo: Lockboxes
+\[ [Back](../../..#readme) \]
+\[ [Example](#Example) \]
+\[ [Files](#Files) \]
 
 You have n number of locked boxes in front of you. Each box is numbered
 sequentially from 0 to n - 1 and each box may contain keys to the other boxes.
@@ -11,7 +14,7 @@ Write a method that determines if all the boxes can be opened.
 - The first box boxes[0] is unlocked
 - Return True if all boxes can be opened, else return False
 
-**Example:**
+#### Example:
 ```
 carrie@ubuntu:~/0x00-lockboxes$ cat main_0.py
 #!/usr/bin/python3
@@ -35,7 +38,7 @@ False
 carrie@ubuntu:~/0x00-lockboxes$
 ```
 
-**File:** 
+#### File:
 \[ [0-lockboxes.py](0-lockboxes.py) \]
 
 \[ [Back](../../..#readme) \]
