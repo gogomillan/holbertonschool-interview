@@ -174,7 +174,6 @@ carrie@ubuntu:~/0x07$
 ```
 
 #### Files: 
-\[ [0-check_cycle.c](0-check_cycle.c) \]
-\[ [lists.h](lists.h) \]
+	\[ [0-check_cycle.c](0-check_cycle.c) \] \[ [lists.h](lists.h) \]
 
 \[ [Back](../../..#readme) \]
