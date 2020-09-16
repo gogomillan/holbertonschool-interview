@@ -1,7 +1,7 @@
 ## :memo: Heap Insert
 \[ [Back](../../..#readme) \]
 \[ [Data Structures](#data-structures--arrow_up-) \]
-\[ [Print Function](#Print-Function) \]
+\[ [Print Function](#Print-Function--arrow_up-) \]
 \[ [Files_0](#Files_0) \]
 \[ [Files_1](#Files_1) \] 
 
@@ -34,7 +34,7 @@ struct binary_tree_s
 typedef struct binary_tree_s heap_t;
 ```
 
-### Print Function
+### Print Function \[ [:arrow_up:](#memo-heap-insert) \]
 
 To match the examples in the tasks, you are given this function:
 ```
