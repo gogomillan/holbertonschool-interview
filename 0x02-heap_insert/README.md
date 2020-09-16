@@ -220,7 +220,7 @@ alex@/tmp/binary_trees$ ./0-node
 alex@/tmp/binary_trees$
 ```
 
-#### Files_0:
+**Files_0:** 
 \[ [0-binary_tree_node.c](0-binary_tree_node.c)  \]
 
 
@@ -321,9 +321,9 @@ Inserted: 50
 alex@/tmp/binary_trees$
 ```
 
-#### Files_1:
+**Files_1:** 
 \[ [1-heap_insert.c](1-heap_insert.c) ,
 [0-binary_tree_node.c](0-binary_tree_node.c) \]
 
 
-\[ [Back](../../..#readme) \]
+\[ [Back](../../..#readme) \] \[ [:arrow_up:](#memo-heap-insert) \]
