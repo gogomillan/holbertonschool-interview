@@ -1,5 +1,6 @@
 ## :memo: holbertonschool-interview
 \[ [Back](../../..#readme) \]
+\[ [example](#Example) \]
 
 Write a function in C that checks if a singly linked list has a cycle in it.
 - Prototype: int check\_cycle(listint\_t \*list);
@@ -8,7 +9,7 @@ Write a function in C that checks if a singly linked list has a cycle in it.
 Requirements:
 - Only these functions are allowed: write, printf, putchar, puts, malloc, free
 
-**Example:**
+#### Example:
 ```
 carrie@ubuntu:~/0x07$ cat lists.h
 #ifndef LISTS_H
