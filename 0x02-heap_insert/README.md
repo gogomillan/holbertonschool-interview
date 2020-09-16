@@ -2,8 +2,8 @@
 \[ [Back](../../..#readme) \]
 \[ [Data Structures](#data-structures--arrow_up-) \]
 \[ [Print Function](#Print-Function--arrow_up-) \]
-\[ [Files_0](#Files_0) \]
-\[ [Files_1](#Files_1) \] 
+\[ [Task 0](#task-0-new-node-mandatory--arrow_up-) \]
+\[ [Task 1](#Files_1) \] 
 
 ### Data Structures \[ [:arrow_up:](#memo-heap-insert) \]
 
@@ -175,7 +175,7 @@ heap_t *heap_insert(heap_t **root, int value);
 vagrant@gogomillan~$
 ```
 
-### Task_0. New node mandatory
+### Task 0. New node mandatory \[ [:arrow_up:](#memo-heap-insert) \]
 
 Write a function that creates a binary tree node:
 - Prototype: binary_tree_t \*binary_tree_node(binary_tree_t \*parent, int value);
