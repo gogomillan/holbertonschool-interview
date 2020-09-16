@@ -1,9 +1,9 @@
 ## :memo: Sandpiles
 
-### :book: About sandpiles
+### About sandpiles
 [Sandpiles - Numberphile](https://intranet.hbtn.io/rltoken/UVY3WFjMmCRlLcr-B2Krug)
 
-### :pencil: Task
+### Task
 
 Write a function that computes the sum of two sandpiles
 - Prototype: void sandpiles\_sum(int grid1\[3][3], int grid2\[3][3]);
