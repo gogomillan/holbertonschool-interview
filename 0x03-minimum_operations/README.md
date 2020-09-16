@@ -12,7 +12,7 @@ exactly n H characters in the file.
 
 n = **9**  
 
-H => Copy All => Paste => H_H_ => Paste =>H_HH_ => Copy All => Paste => HHH_HHH_ => Paste => HHH_HHHHHH_  
+H => Copy All => Paste => H~~H~~ => Paste =>H~~HH~~ => Copy All => Paste => HHHHHH => Paste => HHHHHHHHH  
 
 Number of operations: **6**  
 
