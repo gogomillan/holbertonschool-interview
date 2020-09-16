@@ -1,4 +1,8 @@
 ## :memo: Minimum Operations
+\[ [Back](../../..#readme) \]
+\[ [Concept](#Concept) \]
+\[ [Example](#Example) \]
+\[ [Files](#Files) \]
 
 In a text file, there is a single character H. Your text editor can execute
 only two operations in this file: Copy All and Paste. Given a number n, write
@@ -8,7 +12,7 @@ exactly n H characters in the file.
 - Returns an integer
 - If n is impossible to achieve, return 0
 
-**Concept:**
+#### Concept:
 
 n = **9**  
 
@@ -16,7 +20,7 @@ H => Copy All => Paste => H**H** => Paste =>H**HH** => Copy All => Paste => HHH*
 
 Number of operations: **6**  
 
-**Concept:**
+#### Example:
 ```
 carrie@ubuntu:~/0x03-minoperations$ cat 0-main.py
 #!/usr/bin/python3
@@ -39,7 +43,7 @@ Min number of operations to reach 12 characters: 7
 carrie@ubuntu:~/0x03-minoperations$
 ```
 
-**File:** 
+#### Files:
 \[ [0-minoperations.py](0-minoperations.py) \]
 
 \[ [Back](../../..#readme) \]
