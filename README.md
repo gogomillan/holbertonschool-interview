@@ -12,4 +12,4 @@ Challenges such as an Interview
 - :bookmark_tabs: [0x07-linked_list_cycle](0x07-linked_list_cycle/.#readme)
 - :bookmark_tabs: [0x08-palindrome_integer](0x08-palindrome_integer/.#readme)
 
-![Tweeting](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)
+![[Tweeting](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)][https://twitter.com/gogomillan]
