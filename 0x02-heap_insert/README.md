@@ -3,7 +3,7 @@
 \[ [Data Structures](#data-structures--arrow_up-) \]
 \[ [Print Function](#Print-Function--arrow_up-) \]
 \[ [Task 0](#task-0-new-node-mandatory--arrow_up-) \]
-\[ [Task 1](#Files_1) \] 
+\[ [Task 1](#task-1-heap---insert-mandatory--arrow_up-) \] 
 
 ### Data Structures \[ [:arrow_up:](#memo-heap-insert) \]
 
@@ -224,7 +224,7 @@ alex@/tmp/binary_trees$
 \[ [0-binary_tree_node.c](0-binary_tree_node.c)  \]
 
 
-### Task_1. Heap - Insert mandatory
+### Task 1. Heap - Insert mandatory \[ [:arrow_up:](#memo-heap-insert) \]
 
 Write a function that inserts a value into a Max Binary Heap:
 - Prototype: heap_t \*heap_insert(heap_t \*\*root, int value)
