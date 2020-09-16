@@ -1,4 +1,7 @@
 ## :memo: Log Parsing
+\[ [Back](../../..#readme) \]
+\[ [Example](#Example) \]
+\[ [Files](#Files) \]
 
 Write a script that reads stdin line by line and computes metrics:
 - Input format: \<IP Address\> - \[\<date\>] "GET /projects/260 HTTP/1.1" \<status code\> \<file size\>
@@ -11,7 +14,7 @@ Write a script that reads stdin line by line and computes metrics:
     - format: \<status code\>: \<number\>
     - status codes should be printed in ascending orde
 
-**Example:**
+#### Example:
 ```
 alexa@ubuntu:~/0x06-log_parsing$ cat 0-generator.py
 #!/usr/bin/python3
@@ -76,7 +79,7 @@ KeyboardInterrupt
 alexa@ubuntu:~/0x06-log_parsing$ 
 ```
 
-**Files:**
+#### Files:
 \[ [0-stats.py](0-stats.py) \]
 
 \[ [Back](../../..#readme) \]
