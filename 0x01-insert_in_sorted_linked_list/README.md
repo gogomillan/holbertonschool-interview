@@ -1,9 +1,13 @@
 ## :memo: Insert in sorted linked list
+\[ [Back](../../..#readme) \]
+\[ [Example](#Example) \]
+\[ [Files](#Files) \]
 
 Write a function in C that inserts a number into a sorted singly linked list.
 - Prototype: listint_t \*insert_node(listint_t \*\*head, int number);
 - Return: the address of the new node, or NULL if it failed
 
+#### Example:
 ```
 carrie@ubuntu:0x01$ cat lists.h 
 #ifndef LISTS_H
@@ -170,7 +174,7 @@ carrie@ubuntu:0x01$ ./insert
 carrie@ubuntu:0x01$  
 ```
 
-**Files:** 
+#### Files:
 \[ [0-insert_number.c](0-insert_number.c) ,
 [lists.h](lists.h) \]
 
