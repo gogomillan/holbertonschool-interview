@@ -1,11 +1,14 @@
 ## :memo: Linked list palindrome
+\[ [Back](../../..#readme) \]
+\[ [Example](#Example) \]
+\[ [Files](#Files) \]
 
 Write a function in C that checks if a singly linked list is a palindrome.
 - Prototype: int is\_palindrome(listint\_t \*\*head);
 - Return: 0 if it is not a palindrome, 1 if it is a palindrome
 - An empty list is considered a palindrome
 
-**Example:**
+#### Example:
 ```
 arrie@ubuntu:0x03$ cat lists.h 
 #ifndef LISTS_H
@@ -162,7 +165,7 @@ Linked list is a palindrome
 carrie@ubuntu:0x03$
 ```
 
-**Files:** 
+#### Files:
 \[ [0-is_palindrome.c](0-is_palindrome.c) \]
 \[ [lists.h](lists.h) \]
 
