@@ -1,6 +1,6 @@
 ## :memo: Heap Insert
 \[ [Back](../../..#readme) \]
-\[ [Data Structures](#data-structures-) \]
+\[ [Data Structures](#data-structures-top) \]
 \[ [Print Function](#Print-Function) \]
 \[ [Files_0](#Files_0) \]
 \[ [Files_1](#Files_1) \] 
