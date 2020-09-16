@@ -1,6 +1,7 @@
 ## :memo: holbertonschool-interview
 \[ [Back](../../..#readme) \]
-\[ [example](#Example) \]
+\[ [Example](#Example) \]
+\[ [Files](#Files) \]
 
 Write a function in C that checks if a singly linked list has a cycle in it.
 - Prototype: int check\_cycle(listint\_t \*list);
@@ -172,7 +173,7 @@ Linked list has a cycle
 carrie@ubuntu:~/0x07$
 ```
 
-**Files:** 
+#### Files: 
 \[ [0-check_cycle.c](0-check_cycle.c) \]
 \[ [lists.h](lists.h) \]
 
