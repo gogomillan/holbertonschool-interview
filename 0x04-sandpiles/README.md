@@ -1,4 +1,7 @@
 ## :memo: Sandpiles
+\[ [Back](../../..#readme) \]
+\[ [Example](#Example) \]
+\[ [Files](#Files) \]
 
 ### About sandpiles
 [Sandpiles - Numberphile](https://intranet.hbtn.io/rltoken/UVY3WFjMmCRlLcr-B2Krug)
@@ -13,7 +16,7 @@ Write a function that computes the sum of two sandpiles
 - grid1 must be printed before each toppling round, only if it is unstable (See example)
 - Youre not allowed to allocate memory dynamically
 
-**Example:**
+#### Example:
 ```
 alex@~/0x04-sandpiles$ cat 0-main.c 
 #include <stdlib.h>
@@ -142,7 +145,7 @@ alex@~/0x04-sandpiles$ ./0-sandpiles
 alex@~/0x04-sandpiles$
 ```
 
-**Files:**  
+#### Files:
 \[ [0-sandpiles.c](0-sandpiles.c) \]
 
 \[ [Back](../../..#readme) \]
