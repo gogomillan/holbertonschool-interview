@@ -20,4 +20,4 @@ Gonzalo Gomez Millan
 
 ## :balance_scale: Licence
 MIT 
-\[ [Read]() \]
+\[ [Read](LICENSE) \]
