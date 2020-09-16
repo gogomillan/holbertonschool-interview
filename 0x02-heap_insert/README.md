@@ -1,11 +1,11 @@
 ## :memo: Heap Insert
 \[ [Back](../../..#readme) \]
-\[ [Data_Structures](#Data_Structures) \]
+\[ [Data Structures](#-Data Structures-) \]
 \[ [Print_Function](#Print_Function) \]
 \[ [Files_0](#Files_0) \]
 \[ [Files_1](#Files_1) \] 
 
-### Data_Structures
+### -Data Structures-
 
 Please use the following data structures and types for binary trees. Dont
 forget to include them in your header file.
