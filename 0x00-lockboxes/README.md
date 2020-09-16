@@ -38,7 +38,7 @@ False
 carrie@ubuntu:~/0x00-lockboxes$
 ```
 
-#### File:
+#### Files:
 \[ [0-lockboxes.py](0-lockboxes.py) \]
 
 \[ [Back](../../..#readme) \]
