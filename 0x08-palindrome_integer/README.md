@@ -1,15 +1,16 @@
 ## :memo: Palindrome integer
 \[ [Back](../../..#readme) \]
 \[ [Example](#Example) \]
+\[ [Files](#Files) \]
 
 Write a function that checks whether or not a given unsigned integer is a palindrome.
 
-* Prototype: int is_palindrome(unsigned long n);
+* Prototype: int is\_palindrome(unsigned long n);
 * Where n is the number to be checked
 * Your function must return 1 if n is a palindrome, and 0 otherwise
 * You are not allowed to allocate memory dynamically (malloc, calloc, )
 
-**Example:**
+#### Example:
 ```
 alex@~/0x08-palindrome_integer$ cat 0-main.c 
 #include <stdlib.h>
@@ -64,7 +65,7 @@ alex@~/0x08-palindrome_integer$ ./palindrome 1234567898654321
 alex@~/0x08-palindrome_integer$
 ```
 
-**Files:**
+#### Files:
 \[ [0-is_palindrome.c](0-is_palindrome.c) ,
 [palindrome.h](palindrome.h) \]  
 
