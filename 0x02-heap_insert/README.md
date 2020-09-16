@@ -5,7 +5,7 @@
 \[ [Files_0](#Files_0) \]
 \[ [Files_1](#Files_1) \] 
 
-### Data Structures
+### Data Structures [Top](#-Heap-Insert)
 
 Please use the following data structures and types for binary trees. Dont
 forget to include them in your header file.
