@@ -2,8 +2,8 @@
 Challenges such as an Interview
 
 ## Conent
-![C](https://img.shields.io/badge/c%20-%2300599C.svg?&style=for-the-badge&logo=c&logoColor=white)
-![Python](https://img.shields.io/badge/python-%233776AB.svg?&style=flat-square&logo=python&logoColor=white)
+![C](https://img.shields.io/badge/c%20-%2300599C.svg?&style=for-the-badge&logo=c&logoColor=white)  
+![Python](https://img.shields.io/badge/python-%233776AB.svg?&style=flat-square&logo=python&logoColor=white)  
 
 ## :books: Challenges
 - :bookmark_tabs: [0x00-lockboxes](0x00-lockboxes/.#readme)
