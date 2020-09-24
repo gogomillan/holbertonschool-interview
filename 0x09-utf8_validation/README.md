@@ -1,44 +1,45 @@
-## :memo: Lockboxes
+## :memo: UTF-8 Validation
 \[ [Back](../../..#readme) \]
 \[ [Example](#Example) \]
 \[ [Files](#Files) \]
 
-You have n number of locked boxes in front of you. Each box is numbered
-sequentially from 0 to n - 1 and each box may contain keys to the other boxes.
-
-Write a method that determines if all the boxes can be opened.
-- Prototype: def canUnlockAll(boxes)
-- boxes is a list of lists
-- A key with the same number as a box opens that box
-- You can assume all keys will be positive integers
-- The first box boxes[0] is unlocked
-- Return True if all boxes can be opened, else return False
+Write a method that determines if a given data set represents a valid UTF-8
+encoding.
+- Prototype: def validUTF8(data)
+- Return: True if data is a valid UTF-8 encoding, else return False
+- A character in UTF-8 can be 1 to 4 bytes long
+- The data set can contain multiple characters
+- The data will be represented by a list of integers
+- Each integer represents 1 byte of data, therefore you only need to handle the
+8 least significant bits of each integer
 
 #### Example:
-```
-carrie@ubuntu:~/0x00-lockboxes$ cat main_0.py
+```bash
+carrie@ubuntu:~/0x09-utf8_validation$ cat 0-main.py
 #!/usr/bin/python3
+"""
+Main file for testing
+"""
 
-canUnlockAll = __import__('0-lockboxes').canUnlockAll
+validUTF8 = __import__('0-validate_utf8').validUTF8
 
-boxes = [[1], [2], [3], [4], []]
-print(canUnlockAll(boxes))
+data = [65]
+print(validUTF8(data))
 
-boxes = [[1, 4, 6], [2], [0, 4, 1], [5, 6, 2], [3], [4, 1], [6]]
-print(canUnlockAll(boxes))
+data = [80, 121, 116, 104, 111, 110, 32, 105, 115, 32, 99, 111, 111, 108, 33]
+print(validUTF8(data))
 
-boxes = [[1, 4], [2], [0, 4, 1], [3], [], [4, 1], [5, 6]]
-print(canUnlockAll(boxes))
-
-carrie@ubuntu:~/0x00-lockboxes$
-carrie@ubuntu:~/0x00-lockboxes$ ./main_0.py
+data = [229, 65, 127, 256]
+print(validUTF8(data))
+carrie@ubuntu:~/0x09-utf8_validation$
+carrie@ubuntu:~/0x09-utf8_validation$ ./0-main.py
 True
 True
 False
-carrie@ubuntu:~/0x00-lockboxes$
+carrie@ubuntu:~/0x09-utf8_validation$
 ```
 
 #### Files:
-\[ [0-lockboxes.py](0-lockboxes.py) \]
+\[ [0-validate_utf8.py](0-validate_utf8.py) \]
 
 \[ [Back](../../..#readme) \]
