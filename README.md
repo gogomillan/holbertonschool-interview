@@ -11,6 +11,8 @@ Challenges such as an Interview
 - :bookmark_tabs: [0x06-log_parsing](0x06-log_parsing/.#readme)
 - :bookmark_tabs: [0x07-linked_list_cycle](0x07-linked_list_cycle/.#readme)
 - :bookmark_tabs: [0x08-palindrome_integer](0x08-palindrome_integer/.#readme)
+- :bookmark_tabs: [0x08-palindrome_integer](0x08-palindrome_integer/.#readme)
+- :bookmark_tabs: [0x09-utf8_validation](0x09-utf8_validation/.#readme)
 
 ## :sunglasses: Author
 Gonzalo Gomez Millan  
