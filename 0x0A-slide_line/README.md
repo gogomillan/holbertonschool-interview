@@ -4,7 +4,7 @@
 \[ [Files](#Files) \]
 
 The goal of this task is to reproduce the 2048 game(NSFW !!) mechanics on a
-single horizontal line.\[ [2048 game](https://intranet.hbtn.io/rltoken/zbaecdLFfcqthH0X60M62g) \]
+single horizontal line.\[ [2048 game](https://play2048.co) \]
 
 Given an array of integers, we want to be able to slide & merge it to the left
 or to the right. Identical numbers, if they are contiguous or separated by
