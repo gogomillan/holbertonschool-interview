@@ -3,14 +3,18 @@
 /**
  * slide_line - reproduce the 2048 game(NSFW !!) mechanics on a single
  * horizontal line.
- * @line:
- * @size:
- * @direction:
+ * @line: Pointer to the line array
+ * @size: Size of array
+ * @direction: Direction eft or right
+ * Return: 1 upon success, or 0 upon failure
  */
 int slide_line(int *line, size_t size, int direction)
 {
 	int pos_find = 0, pos_rep = 0, inc = 1, d_flag = -1;
 	int stop = size;
+
+	if (line == NULL)
+		return (0);
 
 	if (direction == SLIDE_RIGHT)
 	{
