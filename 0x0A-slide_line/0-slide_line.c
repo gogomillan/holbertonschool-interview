@@ -10,8 +10,8 @@
  */
 int slide_line(int *line, size_t size, int direction)
 {
-	int pos_find = 0, pos_rep = 0, inc = 1, d_flag = -1;
-	int stop = size;
+	size_t pos_find = 0, pos_rep = 0, inc = 1, d_flag = -1;
+	size_t stop = size;
 
 	if (line == NULL)
 		return (0);
@@ -28,7 +28,7 @@ int slide_line(int *line, size_t size, int direction)
 	{
 		if (*(line + pos_find) != 0)
 		{
-			if (d_flag == *(line + pos_find))
+			if (d_flag == (size_t)*(line + pos_find))
 			{
 				*(line + pos_find) += d_flag;
 				d_flag = -1;
@@ -38,7 +38,7 @@ int slide_line(int *line, size_t size, int direction)
 				d_flag = *(line + pos_find);
 				if ((direction == SLIDE_LEFT && pos_find != 0)
 					||
-					((direction == SLIDE_RIGHT && pos_find != ((int)size - 1))))
+					((direction == SLIDE_RIGHT && pos_find != (size - 1))))
 					pos_rep += inc;
 			}
 			*(line + pos_rep) = *(line + pos_find);
