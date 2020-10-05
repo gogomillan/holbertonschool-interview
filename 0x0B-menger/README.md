@@ -1,7 +1,11 @@
-## :memo: 2048 (single line)
+## :memo: Menger sponge
 \[ [Back](../../..#readme) \]
 \[ [Example](#Example) \]
 \[ [Files](#Files) \]
+
+#### Reference
+
+![assets/sponge.jpg](assets/sponge.jpg)
 
 Write a function that draws a 2D Menger Sponge
 - Prototype: void menger(int level);
