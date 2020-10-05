@@ -6,7 +6,7 @@
 #### Reference
 
 ![assets/sponge.jpg](assets/sponge.jpg)
-![assets/mergersponge.png](https://youtu.be/d-dI_pu_Z0g)
+[![assets/mergersponge.png](assets/mergersponge.png)](https://youtu.be/d-dI_pu_Z0g)
 
 Write a function that draws a 2D Menger Sponge
 - Prototype: void menger(int level);
