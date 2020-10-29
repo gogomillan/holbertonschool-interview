@@ -28,6 +28,7 @@ def valid_pos(solution, pos):
             return False
     return True
 
+
 def solve_queens(row, n, solution):
     """
     Function that finds the solution recursively, from the root down
@@ -41,6 +42,7 @@ def solve_queens(row, n, solution):
                 solution.append(pos)
                 solve_queens(row + 1, n, solution)
                 solution.remove(pos)
+
 
 def main(n):
     """
