@@ -6,6 +6,7 @@
 #### Reference
 
 ![assets/judit.jpg](assets/judit.jpg)
+
 Chess grandmaster [Judit Polgár](https://intranet.hbtn.io/rltoken/0Ouy8puhIfB2Gs-hEdrTog),
 the strongest female chess player of all time
 
