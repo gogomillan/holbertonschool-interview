@@ -26,6 +26,7 @@ and exit with the status 1
 
 Readings: 
 [Queen](https://intranet.hbtn.io/rltoken/_rg2bCY0J4E07MTf4EwU4A)
+,
 [Backtracking](https://intranet.hbtn.io/rltoken/3Icw34XTucOlvNS0SYysOw)
 
 #### Example:
