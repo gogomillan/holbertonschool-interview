@@ -1,27 +1,48 @@
-# :white_check_mark: Holberton School Interview
-Challenges such as an Interview
+## :memo: N Queens
+\[ [Back](../../..#readme) \]
+\[ [Example](#Example) \]
+\[ [Files](#Files) \]
 
-## :books: Challenges
-- :bookmark_tabs: [0x00-lockboxes](0x00-lockboxes/.#readme)
-- :bookmark_tabs: [0x01-insert_in_sorted_linked_list](0x01-insert_in_sorted_linked_list/.#readme)
-- :bookmark_tabs: [0x02-heap_insert](0x02-heap_insert/.#readme)
-- :bookmark_tabs: [0x03-minimum_operations](0x03-minimum_operations/.#readme)
-- :bookmark_tabs: [0x04-sandpiles](0x04-sandpiles/.#readme)
-- :bookmark_tabs: [0x05-linked_list_palindrome](0x05-linked_list_palindrome/.#readme)
-- :bookmark_tabs: [0x06-log_parsing](0x06-log_parsing/.#readme)
-- :bookmark_tabs: [0x07-linked_list_cycle](0x07-linked_list_cycle/.#readme)
-- :bookmark_tabs: [0x08-palindrome_integer](0x08-palindrome_integer/.#readme)
-- :bookmark_tabs: [0x08-palindrome_integer](0x08-palindrome_integer/.#readme)
-- :bookmark_tabs: [0x09-utf8_validation](0x09-utf8_validation/.#readme)
-- :bookmark_tabs: [0x0A-slide_line](0x0A-slide_line/.#readme)
-- :bookmark_tabs: [0x0B-menger](0x0B-menger/.#readme)
+#### Reference
 
-## :sunglasses: Author
-Gonzalo Gomez Millan  
-[![GitHub](https://img.shields.io/badge/github-%23100000.svg?&style=for-the-badge&logo=github&logoColor=white)](https://github.com/gogomillan)
-[![Tweeting](https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/gogomillan)
-[![Linking](https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/gogomillan)
+![assets/judit.jpg](assets/judit.jpg)
 
-## :balance_scale: Licence
-MIT 
-\[ [Read](LICENSE) \]
+The N queens puzzle is the challenge of placing N non-attacking queens on an NN
+chessboard. Write a program that solves the N queens problem.
+
+- Usage: nqueens N
+  - If the user called the program with the wrong number of arguments, print
+Usage: nqueens N, followed by a new line, and exit with the status 1
+- where N must be an integer greater or equal to 4
+  - If N is not an integer, print N must be a number, followed by a new line,
+and exit with the status 1
+  - If N is smaller than 4, print N must be at least 4, followed by a new line,
+and exit with the status 1
+- The program should print every possible solution to the problem
+  - One solution per line
+  - Format: see example
+  - You dont have to print the solutions in a specific order
+- You are only allowed to import the sys module
+
+Readings: 
+[Queen](https://intranet.hbtn.io/rltoken/_rg2bCY0J4E07MTf4EwU4A)
+[Backtracking](https://intranet.hbtn.io/rltoken/3Icw34XTucOlvNS0SYysOw)
+
+#### Example:
+```
+julien@ubuntu:~/0x08. N Queens$ ./0-nqueens.py 4
+[[0, 1], [1, 3], [2, 0], [3, 2]]
+[[0, 2], [1, 0], [2, 3], [3, 1]]
+julien@ubuntu:~/0x08. N Queens$ ./0-nqueens.py 6
+[[0, 1], [1, 3], [2, 5], [3, 0], [4, 2], [5, 4]]
+[[0, 2], [1, 5], [2, 1], [3, 4], [4, 0], [5, 3]]
+[[0, 3], [1, 0], [2, 4], [3, 1], [4, 5], [5, 2]]
+[[0, 4], [1, 2], [2, 0], [3, 5], [4, 3], [5, 1]]
+julien@ubuntu:~/0x08. N Queens$ 
+```
+
+#### Files:
+\[ [0-nqueens.py](0-nqueens.py) \]
+
+
+\[ [Back](../../..#readme) \]
