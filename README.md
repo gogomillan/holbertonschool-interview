@@ -15,6 +15,7 @@ Challenges such as an Interview
 - :bookmark_tabs: [0x09-utf8_validation](0x09-utf8_validation/.#readme)
 - :bookmark_tabs: [0x0A-slide_line](0x0A-slide_line/.#readme)
 - :bookmark_tabs: [0x0B-menger](0x0B-menger/.#readme)
+- :bookmark_tabs: [0x0C-nqueens](0x0C-nqueens/.#readme)
 
 ## :sunglasses: Author
 Gonzalo Gomez Millan  
