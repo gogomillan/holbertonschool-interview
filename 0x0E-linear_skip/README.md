@@ -1,109 +1,128 @@
-## :memo: Array to AVL
+## :memo: Linear search in skip list
 \[ [Back](../../..#readme) \]
 \[ [Example](#Example) \]
 \[ [Files](#Files) \]
 
 #### Reference
 
-**Data Structure**
+Looking for a specific value in a singly linked list always leads to browse
+every element of the list. A common way to optimize the time complexity of a
+search in a singly linked list is to modify the list itself by adding an
+express lane to browse it. A linked list with an express lane is called a
+[skip list](https://intranet.hbtn.io/rltoken/lGL3SR3eFS6dNV915Vu_Yg)
 
-Binary tree
-```
-/**
- * struct binary_tree_s - Binary tree node
- *
- * @n: Integer stored in the node
- * @parent: Pointer to the parent node
- * @left: Pointer to the left child node
- * @right: Pointer to the right child node
- */
-struct binary_tree_s
-{
-    int n;
-    struct binary_tree_s *parent;
-    struct binary_tree_s *left;
-    struct binary_tree_s *right;
-};
-
-typedef struct binary_tree_s binary_tree_t;
-```
-
-AVL tree
-```
-typedef struct binary_tree_s avl_t;
-```
-
-**Print function**
+**Function**
 To match the examples in the tasks, you are given
-[this function](https://github.com/holbertonschool/0x1C.c)
+[this function](https://intranet.hbtn.io/rltoken/H6JMx-aUZSlvuh2p2tvDhg)
 
-**AVL - From sorted array**
-Function that builds an AVL tree from an array
+**Linear search in a skip list**
+Function that searches for a value in a sorted skip list of integers.
 
-- Prototype: avl_t *sorted_array_to_avl(int *array, size_t size);
-- Where array is a pointer to the first element of the array to be converted
-- And size is the number of element in the array
-- Your function must return a pointer to the root node of the created AVL tree, or NULL on failure
-- You can assume there will be no duplicate value in the array
-- You are not allowed to rotate
-- You can only have 3 functions in your file
+- Prototype : skiplist_t *linear_skip(skiplist_t *list, int value);
+- Where list is a pointer to the head of the skip list to search in
+- A node of the express lane is placed every index which is a multiple of the
+square root of the size of the list (see example below)
+- And value is the value to search for
+- You can assume that list will be sorted in ascending order
+- Your function must return a pointer on the first node where value is located
+- If value is not present in list or if head is NULL, your function must return NULL
+- Every time you compare a value in the list to the value you are searching, you have to print this value (see example below)
 
 #### Example:
 ```bash
-alex@~/0x0D-sorted_array_to_avl$ cat 0-main.c
-#include <stdlib.h>
+alex@~/0x0E-linear_skip$ cat 0-main.c 
 #include <stdio.h>
-#include "binary_trees.h"
+#include <stdlib.h>
 
-/**
- * print_array - Prints an array of integers
- *
- * @array: The array to be printed
- * @size: Size of the array
- */
-void print_array(const int *array, size_t size)
-{
-    size_t i;
+#include "search.h"
 
-    for (i = 0; i < size; ++i)
-        printf("(%03d)", array[i]);
-    printf("\n");
-}
+skiplist_t *create_skiplist(int *array, size_t size);
+void print_skiplist(const skiplist_t *list);
+void free_skiplist(skiplist_t *list);
 
 /**
  * main - Entry point
  *
- * Return: 0 on success, error code on failure
+ * Return: Always EXIT_SUCCESS
  */
 int main(void)
 {
-    avl_t *tree;
+    skiplist_t *list, *res;
     int array[] = {
-        1, 2, 20, 21, 22, 32, 34, 47, 62, 68,
-        79, 84, 87, 91, 95, 98
+        0, 1, 2, 3, 4, 7, 12, 15, 18, 19, 23, 53, 61, 62, 76, 99
     };
-    size_t n = sizeof(array) / sizeof(array[0]);
+    size_t size = sizeof(array) / sizeof(array[0]);
 
-    tree = sorted_array_to_avl(array, n);
-    if (!tree)
-        return (1);
-    print_array(array, n);
-    binary_tree_print(tree);
-    return (0);
+    list = create_skiplist(array, size);
+    print_skiplist(list);
+
+    res =  linear_skip(list, 53);
+    printf("Found %d at index: %lu\n\n", 53, res->index);
+    res =  linear_skip(list, 2);
+    printf("Found %d at index: %lu\n\n", 2, res->index);
+    res =  linear_skip(list, 999);
+    printf("Found %d at index: %p\n", 999, (void *) res);
+
+    free_skiplist(list);
+    return (EXIT_SUCCESS);
 }
-alex@~/0x0D-sorted_array_to_avl$ gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 0-main.c 0-sorted_array_to_avl.c -o 0-sorted_array_to_avl
-alex@~/0x0D-sorted_array_to_avl$ ./0-sorted_array_to_avl
-(001)(002)(020)(021)(022)(032)(034)(047)(062)(068)(079)(084)(087)(091)(095)(098)
-                 .-----------------(047)-----------------.
-       .-------(021)-------.                   .-------(084)-------.
-  .--(002)--.         .--(032)--.         .--(068)--.         .--(091)--.
-(001)     (020)     (022)     (034)     (062)     (079)     (087)     (095)--.
-                                                                           (098)
-alex@~/0x0D-sorted_array_to_avl$
+alex@~/0x0E-linear_skip$ gcc -Wall -Wextra -Werror -pedantic 0-main.c 0-linear_skip.c skiplist/*.c -lm -o 0-linear_skip
+alex@~/0x0E-linear_skip$ ./0-linear_skip
+List :
+Index[0] = [0]
+Index[1] = [1]
+Index[2] = [2]
+Index[3] = [3]
+Index[4] = [4]
+Index[5] = [7]
+Index[6] = [12]
+Index[7] = [15]
+Index[8] = [18]
+Index[9] = [19]
+Index[10] = [23]
+Index[11] = [53]
+Index[12] = [61]
+Index[13] = [62]
+Index[14] = [76]
+Index[15] = [99]
+
+Express lane :
+Index[0] = [0]
+Index[4] = [4]
+Index[8] = [18]
+Index[12] = [61]
+
+Value checked at index [4] = [4]
+Value checked at index [8] = [18]
+Value checked at index [12] = [61]
+Value found between indexes [8] and [12]
+Value checked at index [8] = [18]
+Value checked at index [9] = [19]
+Value checked at index [10] = [23]
+Value checked at index [11] = [53]
+Found 53 at index: 11
+
+Value checked at index [4] = [4]
+Value found between indexes [0] and [4]
+Value checked at index [0] = [0]
+Value checked at index [1] = [1]
+Value checked at index [2] = [2]
+Found 2 at index: 2
+
+Value checked at index [4] = [4]
+Value checked at index [8] = [18]
+Value checked at index [12] = [61]
+Value found between indexes [12] and [15]
+Value checked at index [12] = [61]
+Value checked at index [13] = [62]
+Value checked at index [14] = [76]
+Value checked at index [15] = [99]
+Found 999 at index: (nil)
+alex@~/0x0E-linear_skip$ 
 ```
 
 #### Files:
-\[ [0-sorted_array_to_avl.c](0-sorted_array_to_avl.c) \]
+\[ [0-linear_skip.c](0-linear_skip.c) \]
 
 
 \[ [Back](../../..#readme) \]
