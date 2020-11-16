@@ -38,7 +38,7 @@ alexa@ubuntu:~/0x0F$
 ```
 
 #### Files:
-\[ [0-linear_skip.c](0-starwars_characters.js) \]
+\[ [0-starwars_characters.js](0-starwars_characters.js) \]
 
 
 \[ [Back](../../..#readme) \]
