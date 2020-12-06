@@ -21,6 +21,7 @@ Challenges such as an Interview
 - :bookmark_tabs: [0x0F-starwars_api](0x0F-starwars_api/.#readme)
 - :bookmark_tabs: [0x10-rain](0x10-rain/.#readme)
 - :bookmark_tabs: [0x11-heap_sort](0x11-heap_sort/.#readme)
+- :bookmark_tabs: [0x12-advanced_binary_search](0x12-advanced_binary_search/.#readme)
 
 ## :sunglasses: Author
 Gonzalo Gomez Millan  
