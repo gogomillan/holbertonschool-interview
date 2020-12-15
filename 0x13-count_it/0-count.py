@@ -1,43 +1,53 @@
 #!/usr/bin/python3
-""" simple comment """
-from operator import itemgetter
+"""keywords titles of all hot articles"""
 import requests
+import sys
 
 
-def count_words(subreddit, word_list, hot_list=[], init=0, after="null"):
-    url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
-    agt = {"User-Agent": "linux:1:v2.1 (by /u/heimer_r)"}
-    payload = {"limit": "100", "after": after}
-    hot = requests.get(url, headers=agt, params=payload, allow_redirects=False)
-    if hot.status_code == 200:
-        posts = hot.json().get("data").get("children")
-        hot_list += [post.get("data").get("title") for post in posts]
-        after = hot.json().get("data").get("after")
-        if after is not None:
-            count_words(subreddit, word_list, hot_list, 1, after)
-        if init == 0:
-            hot_str = " ".join(hot_list)
-            hot_words = hot_str.split(" ")
-            word_list_low = sorted(word_list)
-            rt = []
-            for word in word_list_low:
-                num = len(
-                    list(
-                        filter(
-                            lambda hot_w: hot_w.lower() == word.lower(),
-                            hot_words)))
-                if num != 0:
-                    rt.append([word, num])
-            if len(rt) != 0:
-                i = 0
-                while i < len(rt) - 1:
-                    if rt[i + 1][0] is not None and rt[i][0] == rt[i + 1][0]:
-                        rt[i][1] += rt[i + 1][1]
-                        rt.pop(i + 1)
-                        rt.append([None, None])
-                        i -= 1
-                    i += 1
-                r = list(filter(lambda x: x != [None, None], rt))
-                r_sorted = sorted(r, key=lambda x: (x[1]), reverse=True)
-                for i in r_sorted:
-                    print(*i, sep=": ")
+def count_words(subreddit, word_list, kw_cont={}, next_pg=None, reap_kw={}):
+    """all hot posts by keyword"""
+    headers = {"User-Agent": "julgachancipa"}
+
+    if next_pg:
+        subRhot = requests.get('https://reddit.com/r/' + subreddit +
+                               '/hot.json?after=' + next_pg,
+                               headers=headers)
+    else:
+        subRhot = requests.get('https://reddit.com/r/' + subreddit +
+                               '/hot.json', headers=headers)
+
+    if subRhot.status_code == 404:
+        return
+
+    if kw_cont == {}:
+        for word in word_list:
+            kw_cont[word] = 0
+            reap_kw[word] = word_list.count(word)
+
+    subRhot_dict = subRhot.json()
+    subRhot_data = subRhot_dict['data']
+    next_pg = subRhot_data['after']
+    subRhot_posts = subRhot_data['children']
+
+    for post in subRhot_posts:
+        post_data = post['data']
+        post_title = post_data['title']
+        title_words = post_title.split()
+        for w in title_words:
+            for key in kw_cont:
+                if w.lower() == key.lower():
+                    kw_cont[key] += 1
+
+    if next_pg:
+        count_words(subreddit, word_list, kw_cont, next_pg, reap_kw)
+
+    else:
+        for key, val in reap_kw.items():
+            if val > 1:
+                kw_cont[key] *= val
+
+        sorted_abc = sorted(kw_cont.items(), key=lambda x: x[0])
+        sorted_res = sorted(sorted_abc, key=lambda x: (-x[1], x[0]))
+        for res in sorted_res:
+            if res[1] > 0:
+                print('{}: {}'.format(res[0], res[1]))
