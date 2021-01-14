@@ -24,6 +24,7 @@ Challenges such as an Interview
 - :bookmark_tabs: [0x12-advanced_binary_search](0x12-advanced_binary_search/.#readme)
 - :bookmark_tabs: [0x13-count_it](0x13-count_it/.#readme)
 - :bookmark_tabs: [0x14-heap_extract](0x14-heap_extract/.#readme)
+- :bookmark_tabs: [0x15-infinite_multiplication](0x15-infinite_multiplication/.#readme)
 
 ## :sunglasses: Author
 Gonzalo Gomez Millan  
