@@ -28,6 +28,7 @@ Challenges such as an Interview
 - :bookmark_tabs: [0x16-rotate_2d_matrix](0x16-rotate_2d_matrix/.#readme)
 - :bookmark_tabs: [0x17-find_the_loop](0x17-find_the_loop/.#readme)
 - :bookmark_tabs: [0x18-merge_sort](0x18-merge_sort/.#readme)
+- :bookmark_tabs: [0x19-making_change](0x19-making_change/.#readme)
 
 ## :sunglasses: Author
 Gonzalo Gomez Millan  
