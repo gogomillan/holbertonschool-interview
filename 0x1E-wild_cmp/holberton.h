@@ -1,5 +1,5 @@
-#ifndef gogomillan
-#define gogomillan
+#ifndef HOLBERTON_H
+#define HOLBERTON_H
 
 #define TRUE  1
 #define FALSE 0
