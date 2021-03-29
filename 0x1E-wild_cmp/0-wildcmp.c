@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
 
 int existchar(char *str, char c);
 
