@@ -42,8 +42,9 @@ int wildcmp(char *s1, char *s2)
  */
 int existchar(char *str, char c)
 {
-	while (*str)
-		if (*str++ == c)
-			return (TRUE);
-	return (FALSE);
+	if (*str == '\0')
+		return (FALSE);
+	if (*str == c)
+		return (TRUE);
+	return (existchar (++str, c));
 }
