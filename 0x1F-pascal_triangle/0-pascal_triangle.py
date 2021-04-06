@@ -33,7 +33,7 @@ def pascal_triangle(n):
             elif i == (width - 1):
                 t[width - 1][i] = 1
             else:
-                t[width - 1][i] = t[width - 2][i - 1] + t [width - 2][i]
+                t[width - 1][i] = t[width - 2][i - 1] + t[width - 2][i]
 
         width += 1
 
