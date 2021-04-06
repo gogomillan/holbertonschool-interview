@@ -35,6 +35,7 @@ Challenges such as an Interview
 - :bookmark_tabs: [0x1C-island_perimeter](0x1C-island_perimeter/.#readme)
 - :bookmark_tabs: [0x1D-avl_trees](0x1D-avl_trees/.#readme)
 - :bookmark_tabs: [0x1E-wild_cmp](0x1E-wild_cmp/.#readme)
+- :bookmark_tabs: [0x1F-pascal_triangle](0x1F-pascal_triangle/.#readme)
 
 ## :sunglasses: Author
 Gonzalo Gomez Millan  
