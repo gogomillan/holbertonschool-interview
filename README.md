@@ -38,6 +38,7 @@ Challenges such as an Interview
 - :bookmark_tabs: [0x1F-pascal_triangle](0x1F-pascal_triangle/.#readme)
 - :bookmark_tabs: [0x20-regex](0x20-regex/.#readme)
 - :bookmark_tabs: [0x21-substring](0x21-substring/.#readme)
+- :bookmark_tabs: [0x22-primegame](0x22-primegame/.#readme)
 
 ## :sunglasses: Author
 Gonzalo Gomez Millan  
